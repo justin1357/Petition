@@ -1,0 +1,20 @@
+<h1>Wanna sign our Petition?<br> Register, and help cats everywhere<br> receive free Computer lessons.</h1>
+{{#error}}
+<h3>Ooopss, somethong went wrong. Please try again</h3>
+{{/error}}
+
+<div id="content_container">
+<form method="POST">
+    <p>First Name</p>
+    <input type="text" name="firstname" value="">
+    <p>Last  name</p>
+    <input type="text" name="lastname" value="">
+    <p>Email Address</p>
+    <input type="email" name="email" value="">
+    <p>Password</p>
+    <input type="password" name="password" value="">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button name="button">SIGN UP!</button>
+</form>
+</div>
+<p>Already registered?   Login <a href="/petition/login">here</a></p>

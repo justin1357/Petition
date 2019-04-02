@@ -1,0 +1,20 @@
+<h1>Sign Our petition below</h1>
+<p id="info">
+All over the world cats are going through life without any computer training, <br>and are struggling to
+make ends meet with mediocre jobs.<br> You can help by signing our petition and making their voice heard.<br>
+Don't let little mittens here go through life without having a real shot at a great IT job. </p>
+{{#error}}
+<h3>We did not see any input. Please try again</h3>
+{{/error}}
+
+<form method="POST">
+
+
+
+    <input id="sig-input" type="hidden" name="signature" value="">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <canvas id="sigcanv" width="600" height="100"></canvas>
+    <button name="button">Submit</button>
+</form>
+
+<!-- <img src="https://i.gifer.com/Hjjx.gif" alt=""> -->

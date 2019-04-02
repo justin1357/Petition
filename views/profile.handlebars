@@ -1,0 +1,18 @@
+<h1>Now you've registered, please tell us a little more about yourself</h1>
+{{#error}}
+<h3>Ooopss, somethong went wrong. Please try again.</h3>
+{{/error}}
+
+<div id="content_container">
+<form method="POST">
+    <p>Age</p>
+    <input type="text" name="age" value="">
+    <p>City</p>
+    <input type="text" name="city" value="">
+    <p>Homepage</p>
+    <input type="text" name="homepage" value="">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button name="button">Continue</button>
+
+</form>
+</div>

@@ -1,0 +1,14 @@
+<nav>
+    <a href="../../petition"><img src="/public/../00496-cat-logo-design-free-logomaker-01.png" alt="cat logo" id="logo"></a>
+
+
+    {{#if loggedin}}
+
+        <a href="../../petition/logout" id="nav_items">Logout</a>
+        <a href="../../petition/edit" id="nav_items">Edit</a>
+        <a href="../../petition/signers" id="nav_items">Other Signers</a>
+        {{else}}<a href="../petition/login" id="nav_items">Login</a>
+    {{/if}}
+
+
+</nav>

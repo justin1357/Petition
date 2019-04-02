@@ -1,0 +1,16 @@
+<h1>Already a Member? Log in below</h1>
+
+{{#error}}
+<h3>Ooopss, something went wrong. Please try again</h3>
+{{/error}}
+
+<div id="content_container">
+<form method="post">
+    <p>Email Address</p>
+    <input type="email" name="email" value="">
+    <p>Password</p>
+    <input type="password" name="password" value="">
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+    <button name="button">Log in!</button>
+</form>
+</div>

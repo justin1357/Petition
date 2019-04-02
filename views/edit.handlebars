@@ -1,0 +1,29 @@
+<h1>Edit your profile</h1>
+
+{{#error}}
+<h3>Ooopss, somethong went wrong. Please try again <a href="./edit">here!</a></h3>
+{{/error}}
+
+<div id="content_container">
+<form method="POST">
+    {{# data}}
+    <label>First Name</label>
+    <input type="text" name="first" value="{{first}}" placeholder="First Name">
+    <label>Last Name</label>
+    <input type="text" name="last" value="{{last}}" placeholder="Last Name">
+    <label>Email</label>
+    <input type="email" name="email" value="{{email}}" placeholder="Email Address">
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password">
+    <label>Age</label>
+    <input type="text" name="age" value="{{age}}" placeholder="Age">
+    <label>City</label>
+    <input type="text" name="city" value="{{city}}" placeholder="City">
+    <label>Homepage</label>
+    <input type="text" name="homepage" value="{{url}}" placeholder="Homepage">
+
+    <button name="button">Update!</button>
+    {{/ data}}
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</form>
+</div>

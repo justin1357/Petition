@@ -1,0 +1,23 @@
+<h1>Thank you for signing our petition</h1>
+<div id="content_container">
+
+
+<form method="POST">
+    <button name="button">Delete your signature here</button>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</form>
+
+{{# img}}
+<img src="{{sig}}" alt="" id="sigimg">
+
+{{/ img}}
+
+
+</div>
+<div>
+
+<div>
+<!-- <form method="POST">
+    <button name="button" formaction="/logout">Log out here</button>
+    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+</form> -->
